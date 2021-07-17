@@ -1,5 +1,6 @@
 name: "distill-personal-site"
 title: "eve perry"
+theme: theme.css
 description: |
   Eve Perry
 output_dir: "_site"
