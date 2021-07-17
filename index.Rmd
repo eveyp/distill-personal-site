@@ -1,5 +1,5 @@
 ---
-title: "Eve Perry"
+title: "eve perry"
 site: distill::distill_website
 listing: posts
 ---

@@ -2,18 +2,18 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
+      "title": "about",
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-07-16T22:48:09-07:00"
+      "last_modified": "2021-07-17T00:53:45-07:00"
     },
     {
       "path": "index.html",
-      "title": "Eve Perry",
+      "title": "eve perry",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-07-16T22:48:10-07:00"
+      "last_modified": "2021-07-17T00:53:53-07:00"
     }
   ],
   "collections": ["posts/posts.json"]
