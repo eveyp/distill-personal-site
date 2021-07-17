@@ -3,11 +3,11 @@ title: "Welcome to Eve Perry"
 description: |
   Welcome to our new blog, Eve Perry. We hope you enjoy 
   reading what we have to say!
-author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+# author:
+#   - name: Nora Jones 
+#     url: https://example.com/norajones
+#     affiliation: Spacely Sprockets
+#     affiliation_url: https://example.com/spacelysprokets
 date: 07-16-2021
 output:
   distill::distill_article:
@@ -21,6 +21,14 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/distill/blog.html
 
 ```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur, leo ut blandit sollicitudin, erat nisl mollis nulla, et euismod justo enim a odio. Morbi pulvinar tristique orci, vel pulvinar sapien accumsan eget. Donec laoreet finibus velit, a maximus felis mattis quis. Mauris lacinia volutpat justo quis imperdiet. Duis at posuere augue. Curabitur vitae nisi eleifend urna dictum rhoncus. Nullam eleifend a quam id luctus. In a suscipit ante. Vestibulum condimentum eros ut libero ultricies bibendum.
 
+Praesent molestie gravida pretium. Sed varius faucibus fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sapien urna, mattis elementum est vel, efficitur consectetur felis. Sed a neque in nisl faucibus dapibus. Nunc id sodales tortor. Nam laoreet pulvinar dignissim. Integer eu nunc et nisl convallis euismod. In erat eros, auctor a bibendum a, ultrices ac velit. Duis efficitur tortor massa, in tincidunt dui tempus at.
 
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec risus aliquam, laoreet lacus nec, semper metus. Nam id posuere nibh. Curabitur tortor risus, suscipit quis lectus non, fringilla congue lorem. Sed dictum lorem a elementum porttitor. Fusce a risus leo. Nulla nisl lacus, viverra eu gravida nec, molestie eget ligula. Integer pretium, erat ut facilisis venenatis, sem felis congue magna, quis placerat quam tellus eget augue. Fusce consectetur venenatis sagittis. Nullam porttitor posuere justo non vulputate. Morbi lobortis ligula a elit semper posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras sodales tempus tempor. Nulla facilisi. Vivamus fringilla ipsum vitae semper convallis.
 
+`test code goes here`
+
+Cras tempor nulla in auctor consequat. Suspendisse eu magna in diam tincidunt consectetur eu nec libero. Etiam euismod nunc ut ex pharetra, eget eleifend nunc tristique. Integer eget dolor rhoncus, lacinia nisl id, congue metus. Etiam gravida purus ut metus convallis, vitae feugiat dui tincidunt. Fusce ut dapibus enim. Aliquam fringilla justo sed auctor pulvinar. Integer in erat tortor.
+
+Donec hendrerit at velit non sodales. Suspendisse pretium, mi quis luctus faucibus, lacus mi tempor tellus, vel mollis massa orci sed purus. Nunc aliquam vel felis vel lacinia. Sed molestie fringilla luctus. Donec fermentum pellentesque luctus. Suspendisse dui enim, tincidunt vel nisi at, scelerisque condimentum leo. Duis lacinia, urna quis malesuada porta, purus metus molestie enim, ac aliquet ex eros sed est. Proin non consectetur tellus. Maecenas volutpat tellus sed consequat molestie. Aliquam erat volutpat. Nullam hendrerit eros et ornare tincidunt.
