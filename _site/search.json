@@ -2,18 +2,18 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "about",
+      "title": "about me",
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-07-17T14:24:57-07:00"
+      "last_modified": "2021-07-17T15:28:28-07:00"
     },
     {
       "path": "index.html",
       "title": "eve perry",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          eve perry\r\n          \r\n          \r\n          home\r\n          about\r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            \r\n          \r\n            eve perry\r\n          \r\n          \r\n            \r\n          \r\n          \r\n            hi, there! i’m eve, a data scientist and public policy researcher focusing on homelessness, housing, labor, and healthcare.\r\n          \r\n          \r\n            \r\n                \r\n                  \r\n                    GitHub\r\n                  \r\n                \r\n              \r\n                            \r\n                \r\n                  \r\n                    Twitter\r\n                  \r\n                \r\n              \r\n                          \r\n        \r\n      \r\n    \r\n\r\n    \r\n      \r\n        \r\n          \r\n            \r\n          \r\n            eve perry\r\n          \r\n          \r\n            \r\n          \r\n          \r\n            hi, there! i’m eve, a data scientist and public policy researcher focusing on homelessness, housing, labor, and healthcare.\r\n          \r\n        \r\n      \r\n      \r\n          \r\n              \r\n                                \r\n                    \r\n                    GitHub\r\n                    \r\n                \r\n                                \r\n                    \r\n                    Twitter\r\n                    \r\n                \r\n                              \r\n          \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
-      "last_modified": "2021-07-17T14:25:13-07:00"
+      "last_modified": "2021-07-17T15:28:29-07:00"
     }
   ],
   "collections": ["posts/posts.json"]
