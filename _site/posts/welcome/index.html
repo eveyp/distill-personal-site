@@ -94,7 +94,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2021-07-16"/>
 <meta property="article:created" itemprop="dateCreated" content="2021-07-16"/>
-<meta name="article:author" content="Nora Jones"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="eve perry: Welcome to Eve Perry"/>
@@ -112,12 +111,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Eve Perry"]},{"type":"character","attributes":{},"value":["Welcome to our new blog, Eve Perry. We hope you enjoy \nreading what we have to say!"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Nora Jones"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]},{"type":"character","attributes":{},"value":["Spacely Sprockets"]},{"type":"character","attributes":{},"value":["https://example.com/spacelysprokets"]}]}]},{"type":"character","attributes":{},"value":["07-16-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Welcome to Eve Perry"]},{"type":"character","attributes":{},"value":["Welcome to our new blog, Eve Perry. We hope you enjoy \nreading what we have to say!"]},{"type":"character","attributes":{},"value":["07-16-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/header-attrs-2.8/header-attrs.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2141,7 +2140,7 @@ html {
   --aside-size:      12px;
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
-  --title-color:     #000000;
+  --title-color:     white;
   --header-color:    rgba(0, 0, 0, 0.8);
   --body-color:      rgba(0, 0, 0, 0.8);
   --aside-color:     rgba(0, 0, 0, 0.6);
@@ -2156,9 +2155,9 @@ html {
 /*-- ARTICLE METADATA --*/
 d-byline {
   --heading-size:    0.6rem;
-  --heading-color:   rgba(0, 0, 0, 0.5);
+  --heading-color:   white;
   --body-size:       0.8rem;
-  --body-color:      rgba(0, 0, 0, 0.8);
+  --body-color:      white;
 }
 
 /*-- ARTICLE TABLE OF CONTENTS --*/
@@ -2172,7 +2171,7 @@ d-appendix {
   --heading-size:    15px;
   --heading-color:   rgba(0, 0, 0, 0.65);
   --text-size:       0.8em;
-  --text-color:      rgba(0, 0, 0, 0.5);
+  --text-color:      white;
 }
 
 /*-- WEBSITE HEADER + FOOTER --*/
@@ -2183,20 +2182,59 @@ d-appendix {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+  --bkgd-color:       background: rgba(0, 0, 0, 0);
 }
 
 .distill-site-footer {
   --text-color:       rgba(255, 255, 255, 0.8);
   --text-size:        15px;
   --hover-color:      white;
-  --bkgd-color:       #0F2E3D;
+  /*--bkgd-color:       #0F2E3D;*/
 }
 
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 .min-vh-100 {
   min-height: calc(100vh - 60px) !important;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #5A59A3;
+  background: linear-gradient(130deg, #5A59A3 25%, #C66060 75%);
+  color: white;
+  min-height: 100vh;
+}
+
+d-article > p {
+  --text-padding: 1em;
+  --text-margin: calc(var(--text-padding) * -1);
+  
+  padding-top: var(--text-padding);
+  
+  margin-bottom: 0;
+  
+  margin-left: var(--text-margin);
+  padding-left: var(--text-padding);
+  
+  margin-right: var(--text-margin);
+  padding-right: var(--text-padding);
+  
+  background-color: white;
+  
+  --border-radius: 25px
+}
+
+d-article > p:first-child {
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+
+d-article > p:last-child {
+  padding-bottom: var(--text-padding);
+  
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
 }</style>
 <style type="text/css">
 /* base style */
@@ -2374,7 +2412,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Welcome to Eve Perry","description":"Welcome to our new blog, Eve Perry. We hope you enjoy \nreading what we have to say!","authors":[{"author":"Nora Jones","authorURL":"https://example.com/norajones","affiliation":"Spacely Sprockets","affiliationURL":"https://example.com/spacelysprokets","orcidID":""}],"publishedDate":"2021-07-16T00:00:00.000-07:00","citationText":"Jones, 2021"}
+{"title":"Welcome to Eve Perry","description":"Welcome to our new blog, Eve Perry. We hope you enjoy \nreading what we have to say!","authors":[],"publishedDate":"2021-07-16T00:00:00.000-07:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2403,13 +2441,14 @@ d-appendix d-footnote-list a.footnote-backlink {
 <p><p>Welcome to our new blog, Eve Perry. We hope you enjoy reading what we have to say!</p></p>
 </div>
 
-<div class="d-byline">
-  Nora Jones <a href="https://example.com/norajones" class="uri">https://example.com/norajones</a> (Spacely Sprockets)<a href="https://example.com/spacelysprokets" class="uri">https://example.com/spacelysprokets</a>
-  
-<br/>07-16-2021
-</div>
 
 <div class="d-article">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur, leo ut blandit sollicitudin, erat nisl mollis nulla, et euismod justo enim a odio. Morbi pulvinar tristique orci, vel pulvinar sapien accumsan eget. Donec laoreet finibus velit, a maximus felis mattis quis. Mauris lacinia volutpat justo quis imperdiet. Duis at posuere augue. Curabitur vitae nisi eleifend urna dictum rhoncus. Nullam eleifend a quam id luctus. In a suscipit ante. Vestibulum condimentum eros ut libero ultricies bibendum.</p>
+<p>Praesent molestie gravida pretium. Sed varius faucibus fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sapien urna, mattis elementum est vel, efficitur consectetur felis. Sed a neque in nisl faucibus dapibus. Nunc id sodales tortor. Nam laoreet pulvinar dignissim. Integer eu nunc et nisl convallis euismod. In erat eros, auctor a bibendum a, ultrices ac velit. Duis efficitur tortor massa, in tincidunt dui tempus at.</p>
+<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec risus aliquam, laoreet lacus nec, semper metus. Nam id posuere nibh. Curabitur tortor risus, suscipit quis lectus non, fringilla congue lorem. Sed dictum lorem a elementum porttitor. Fusce a risus leo. Nulla nisl lacus, viverra eu gravida nec, molestie eget ligula. Integer pretium, erat ut facilisis venenatis, sem felis congue magna, quis placerat quam tellus eget augue. Fusce consectetur venenatis sagittis. Nullam porttitor posuere justo non vulputate. Morbi lobortis ligula a elit semper posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras sodales tempus tempor. Nulla facilisi. Vivamus fringilla ipsum vitae semper convallis.</p>
+<p><code>test code goes here</code></p>
+<p>Cras tempor nulla in auctor consequat. Suspendisse eu magna in diam tincidunt consectetur eu nec libero. Etiam euismod nunc ut ex pharetra, eget eleifend nunc tristique. Integer eget dolor rhoncus, lacinia nisl id, congue metus. Etiam gravida purus ut metus convallis, vitae feugiat dui tincidunt. Fusce ut dapibus enim. Aliquam fringilla justo sed auctor pulvinar. Integer in erat tortor.</p>
+<p>Donec hendrerit at velit non sodales. Suspendisse pretium, mi quis luctus faucibus, lacus mi tempor tellus, vel mollis massa orci sed purus. Nunc aliquam vel felis vel lacinia. Sed molestie fringilla luctus. Donec fermentum pellentesque luctus. Suspendisse dui enim, tincidunt vel nisi at, scelerisque condimentum leo. Duis lacinia, urna quis malesuada porta, purus metus molestie enim, ac aliquet ex eros sed est. Proin non consectetur tellus. Maecenas volutpat tellus sed consequat molestie. Aliquam erat volutpat. Nullam hendrerit eros et ornare tincidunt.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

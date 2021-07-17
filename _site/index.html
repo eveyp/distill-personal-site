@@ -738,7 +738,7 @@
             --aside-size:      12px;
             --fig-cap-size:    13px;
             /*-- Main font colors --*/
-            --title-color:     #000000;
+            --title-color:     white;
             --header-color:    rgba(0, 0, 0, 0.8);
             --body-color:      rgba(0, 0, 0, 0.8);
             --aside-color:     rgba(0, 0, 0, 0.6);
@@ -753,9 +753,9 @@
           /*-- ARTICLE METADATA --*/
           d-byline {
             --heading-size:    0.6rem;
-            --heading-color:   rgba(0, 0, 0, 0.5);
+            --heading-color:   white;
             --body-size:       0.8rem;
-            --body-color:      rgba(0, 0, 0, 0.8);
+            --body-color:      white;
           }
 
           /*-- ARTICLE TABLE OF CONTENTS --*/
@@ -769,7 +769,7 @@
             --heading-size:    15px;
             --heading-color:   rgba(0, 0, 0, 0.65);
             --text-size:       0.8em;
-            --text-color:      rgba(0, 0, 0, 0.5);
+            --text-color:      white;
           }
 
           /*-- WEBSITE HEADER + FOOTER --*/
@@ -780,20 +780,59 @@
             --text-color:       rgba(255, 255, 255, 0.8);
             --text-size:        15px;
             --hover-color:      white;
-            --bkgd-color:       #0F2E3D;
+            --bkgd-color:       background: rgba(0, 0, 0, 0);
           }
 
           .distill-site-footer {
             --text-color:       rgba(255, 255, 255, 0.8);
             --text-size:        15px;
             --hover-color:      white;
-            --bkgd-color:       #0F2E3D;
+            /*--bkgd-color:       #0F2E3D;*/
           }
 
           /*-- Additional custom styles --*/
           /* Add any additional CSS rules below                      */
           .min-vh-100 {
             min-height: calc(100vh - 60px) !important;
+          }
+
+          body {
+            font-family: 'Open Sans', sans-serif;
+            background: #5A59A3;
+            background: linear-gradient(130deg, #5A59A3 25%, #C66060 75%);
+            color: white;
+            min-height: 100vh;
+          }
+
+          d-article > p {
+            --text-padding: 1em;
+            --text-margin: calc(var(--text-padding) * -1);
+            
+            padding-top: var(--text-padding);
+            
+            margin-bottom: 0;
+            
+            margin-left: var(--text-margin);
+            padding-left: var(--text-padding);
+            
+            margin-right: var(--text-margin);
+            padding-right: var(--text-padding);
+            
+            background-color: white;
+            
+            --border-radius: 25px
+          }
+
+          d-article > p:first-child {
+            border-top-right-radius: var(--border-radius);
+            border-top-left-radius: var(--border-radius);
+          }
+
+          d-article > p:last-child {
+            padding-bottom: var(--text-padding);
+            
+            border-bottom-right-radius: var(--border-radius);
+            border-bottom-left-radius: var(--border-radius);
           }</style>
           <style type="text/css">
           /* base style */
